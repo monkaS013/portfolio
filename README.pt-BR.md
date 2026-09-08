@@ -1,10 +1,12 @@
-# Vinicius Morais — AI & Automation Engineer
+# Vinicius Morais
+
+**AI & Automation Engineer**
 
 *[English](README.md)*
 
-Construo sistemas de IA e automação que chegam a produção. Este portfólio tem dois tipos de entrada: repositórios open-source que você pode ler e rodar, e case studies de sistemas internos que construí no trabalho, escritos sem código proprietário, dados reais ou segredos.
+Construo sistemas de IA e automação que chegam a produção. Este portfólio tem dois tipos de entrada. Há repositórios open-source que você pode ler e rodar, e há case studies de sistemas internos que construí no trabalho, escritos sem código proprietário, dados reais ou segredos.
 
-Quem eu sou, em resumo: engenheiro eletricista que migrou para dados e IA. No último ano coloquei no ar um assistente RAG que responde dúvidas de RH em produção, um portal de RH que uma empresa inteira usa todo dia, pipelines de dados sobre milhões de linhas e algumas ferramentas menores que uso no meu dia a dia.
+Sou engenheiro eletricista e migrei para dados e IA. No último ano coloquei no ar um assistente RAG que responde dúvidas de RH em produção e um portal de RH que uma empresa inteira usa todo dia. Também tenho pipelines sobre alguns milhões de linhas e ferramentas menores que uso no meu dia a dia.
 
 ## Código open-source
 
@@ -19,11 +21,11 @@ Quem eu sou, em resumo: engenheiro eletricista que migrou para dados e IA. No ú
 
 ## Case studies (sistemas em produção, sanitizados)
 
-Descrevem sistemas que construí dentro de uma empresa. Sem código proprietário, dado real ou identificação da empresa: só o problema, a arquitetura e a engenharia.
+Descrevem sistemas que construí dentro de uma empresa. Sem código proprietário, sem dado real, sem o nome da empresa. Sobra o problema e como ele foi resolvido.
 
 | Case | Problema | Destaques |
 |---|---|---|
-| [Pergunte ao RH — RAG em produção](case-studies/ask-hr-rag.md) | O colaborador não achava a resposta escondida nas políticas de RH | pgvector + LangGraph · eval gold-standard como gate de release · guardrails OWASP-LLM · citação da fonte |
+| [Pergunte ao RH (RAG em produção)](case-studies/ask-hr-rag.md) | O colaborador não achava a resposta escondida nas políticas de RH | pgvector + LangGraph · eval gold-standard como gate de release · guardrails OWASP-LLM · citação da fonte |
 | [HRIS interno](case-studies/hris.md) | RH rodava em planilhas soltas e e-mail | Next.js/TypeScript · controle de acesso por papel · ~557 testes · deploy por push |
 | [Inteligência de mercado](case-studies/market-intelligence.md) | Falta de visibilidade do sell-in por concorrente | pipeline DuckDB sobre 4,5M de linhas · dados públicos regulatórios |
 | [Estudo de mercado multi-agente](case-studies/multi-agent-market-study.md) | Decidir a entrada de uma nova linha de produto | orquestrador + 6 agentes de pesquisa em paralelo |
@@ -31,7 +33,7 @@ Descrevem sistemas que construí dentro de uma empresa. Sem código proprietári
 
 ## AI tooling / agent skills
 
-Skills que criei ou estendi para o meu próprio fluxo de agentes — veja [ai-skills.md](ai-skills.md). O arquivo deixa claro o que é criação minha e o que estende outro projeto open-source (com crédito).
+As skills que criei ou estendi para o meu próprio fluxo de agentes estão em [ai-skills.md](ai-skills.md). O arquivo deixa claro o que é criação minha e o que estende outro projeto open-source, com crédito.
 
 ## Trajetória
 

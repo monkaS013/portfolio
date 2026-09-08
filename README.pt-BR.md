@@ -10,9 +10,12 @@ Quem eu sou, em resumo: engenheiro eletricista que migrou para dados e IA. No ú
 
 | Repo | O que faz | Stack |
 |---|---|---|
-| [claude-usage-monitor](https://github.com/monkaS013/claude-usage-monitor) | Widget flutuante no Windows com os números reais de uso do plano Claude, sem nenhuma chamada de rede | Python, Tkinter |
-| [nl2sql-ecommerce-agent](https://github.com/monkaS013/nl2sql-ecommerce-agent) | Agente que traduz pergunta em linguagem natural para SQL sobre um dataset público de e-commerce, com camada de segurança de SQL e loop de auto-reparo | Python, DuckDB, Streamlit |
+| [rag-docs](https://github.com/monkaS013/rag-docs) | RAG sobre um corpus de documentos que roda offline: pipeline em LangGraph (recupera → avalia → roteia → responde ou cai no fallback), cinco guardrails OWASP-LLM e eval de precision@k | Python, LangGraph, pgvector, Claude |
+| [brasilapi-mcp](https://github.com/monkaS013/brasilapi-mcp) | Servidor MCP que escrevi do zero, expondo a BrasilAPI pública (CEP, CNPJ, bancos, feriados) como oito ferramentas | Python, MCP SDK v2, httpx |
+| [multi-llm-ensemble-extractor](https://github.com/monkaS013/multi-llm-ensemble-extractor) | Roda Claude, Llama e Gemini em paralelo sobre o mesmo documento e consolida campo a campo por voto majoritário, marcando as divergências para revisão | Python, Claude/Gemini/Groq, Pydantic |
+| [nl2sql-ecommerce-agent](https://github.com/monkaS013/nl2sql-ecommerce-agent) | Perguntas em linguagem natural sobre um dataset de e-commerce. Ele calcula o número num sandbox e mostra o código e a fonte, em vez de deixar o modelo chutar | Python, DuckDB, Streamlit |
 | [doc-analyzer-evals](https://github.com/monkaS013/doc-analyzer-evals) | Extração estruturada de documentos com eval gold-standard (precision/recall/F1) | Python, Claude, Pydantic |
+| [claude-usage-monitor](https://github.com/monkaS013/claude-usage-monitor) | Widget flutuante no Windows com os números reais de uso do plano Claude, sem nenhuma chamada de rede | Python, Tkinter |
 
 ## Case studies (sistemas em produção, sanitizados)
 
@@ -34,7 +37,7 @@ Skills que criei ou estendi para o meu próprio fluxo de agentes — veja [ai-sk
 
 - Bacharel em Engenharia Elétrica, Universidade Santa Cecília
 - Dados & IA numa importadora do setor de energia; antes, planejamento de demanda e S&OP
-- Python · RAG · LangGraph · agentes · FastAPI · Next.js · DuckDB · SQL · Power BI
+- Python · RAG · pgvector · LangGraph · agentes · MCP · evals · FastAPI · Next.js · DuckDB · SQL · Power BI
 
 ## Contato
 

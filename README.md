@@ -10,9 +10,12 @@ Short version of who I am: an electrical engineer who moved into data and AI. Ov
 
 | Repo | What it does | Stack |
 |---|---|---|
-| [claude-usage-monitor](https://github.com/monkaS013/claude-usage-monitor) | Floating Windows widget with the real usage numbers of the Claude plan, with no network calls | Python, Tkinter |
-| [nl2sql-ecommerce-agent](https://github.com/monkaS013/nl2sql-ecommerce-agent) | Natural-language-to-SQL agent over a public e-commerce dataset, with a SQL safety layer and a self-repair loop | Python, DuckDB, Streamlit |
+| [rag-docs](https://github.com/monkaS013/rag-docs) | RAG over a document corpus that runs offline: a LangGraph pipeline (retrieve → grade → route → generate or fall back), five OWASP-LLM guardrails, and a precision@k eval | Python, LangGraph, pgvector, Claude |
+| [brasilapi-mcp](https://github.com/monkaS013/brasilapi-mcp) | An MCP server I wrote from scratch, exposing the public BrasilAPI (postal codes, company registry, banks, holidays) as eight tools | Python, MCP SDK v2, httpx |
+| [multi-llm-ensemble-extractor](https://github.com/monkaS013/multi-llm-ensemble-extractor) | Runs Claude, Llama and Gemini in parallel on the same document and consolidates each field by majority vote, flagging disagreements for review | Python, Claude/Gemini/Groq, Pydantic |
+| [nl2sql-ecommerce-agent](https://github.com/monkaS013/nl2sql-ecommerce-agent) | Natural-language questions over an e-commerce dataset. It computes the number in a sandbox and shows the code and the source, instead of letting the model guess it | Python, DuckDB, Streamlit |
 | [doc-analyzer-evals](https://github.com/monkaS013/doc-analyzer-evals) | Structured document extraction with a gold-standard eval (precision/recall/F1) | Python, Claude, Pydantic |
+| [claude-usage-monitor](https://github.com/monkaS013/claude-usage-monitor) | Floating Windows widget with the real usage numbers of the Claude plan, with no network calls | Python, Tkinter |
 
 ## Case studies (production systems, sanitized)
 
@@ -34,7 +37,7 @@ Skills I built or extended for my own agent workflow — see [ai-skills.md](ai-s
 
 - B.Sc. Electrical Engineering, Universidade Santa Cecília
 - Data & AI at an energy-sector importer; before that, demand planning and S&OP
-- Python · RAG · LangGraph · agents · FastAPI · Next.js · DuckDB · SQL · Power BI
+- Python · RAG · pgvector · LangGraph · agents · MCP · evals · FastAPI · Next.js · DuckDB · SQL · Power BI
 
 ## Contact
 

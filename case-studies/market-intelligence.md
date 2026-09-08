@@ -36,7 +36,7 @@ Methodological rigor mattered as much as the numbers. Public sources publish wit
 
 - ~4.5M systems processed; the source Parquet is ~103 MB per refresh.
 - The container runs in ~132 MB of RAM.
-- ~500 tests (up from ~45 at MVP).
+- 1,088 tests (up from ~45 at MVP).
 - Monthly automated refresh of public data plus daily refresh of internal data.
 - Manufacturer identification covers ~97% of the base; the unit-power extractor covers ~77% with ~92% accuracy against an oracle.
 
@@ -82,7 +82,7 @@ O rigor metodológico pesou tanto quanto os números. As fontes públicas public
 
 - ~4,5M de sistemas processados; o Parquet de origem tem ~103 MB por refresh.
 - O container roda em ~132 MB de RAM.
-- ~500 testes (partindo de ~45 no MVP).
+- 1.088 testes (partindo de ~45 no MVP).
 - Refresh mensal automatizado do dado público mais refresh diário do dado interno.
 - A identificação de fabricante cobre ~97% da base; o extrator de potência unitária cobre ~77% com ~92% de acerto contra um oráculo.
 

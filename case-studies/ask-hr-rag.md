@@ -37,7 +37,7 @@ Embeddings run locally (ONNX, e5-large, 1024 dims), so document text never leave
 
 ## Results
 
-In production, answering real HR questions with correct citations. On the (fictional) eval set, hit-rate@5 is perfect across the 16 questions. I gate on hit-rate rather than precision on purpose. The eval corpus has few chunks per document, so precision would read low and mean little there. Warm latency is around 2.4–4s on CPU, with the cold start removed by warming the model at boot. Embeddings cost nothing per token, and the vectors sit in a database that already existed.
+In production, answering real HR questions with correct citations. On the (fictional) eval set, hit-rate@5 is 1.0 across the 16 questions, which is a small hand-built set. I gate on hit-rate rather than precision on purpose. The eval corpus has few chunks per document, so precision would read low and mean little there. Warm latency is around 2.4–4s on CPU, with the cold start removed by warming the model at boot. Embeddings cost nothing per token, and the vectors sit in a database that already existed.
 
 > Sanitized for public use: no company identity, real names, internal hosts, or credentials. The eval corpus is fictional by design.
 
@@ -80,6 +80,6 @@ Os embeddings rodam localmente (ONNX, e5-large, 1024 dims), então o texto dos d
 
 ## Resultados
 
-Em produção, respondendo perguntas reais de RH com citação correta. No conjunto de eval (fictício), o hit-rate@5 é perfeito nas 16 perguntas. Faço o gate por hit-rate em vez de precision de propósito. O corpus de eval tem poucos trechos por documento, então precision ficaria baixa e diria pouco ali. A latência "warm" fica em torno de 2,4–4s em CPU, com o cold start eliminado pelo pré-aquecimento do modelo no boot. Os embeddings não custam por token e os vetores ficam num banco que já existia.
+Em produção, respondendo perguntas reais de RH com citação correta. No conjunto de eval (fictício), o hit-rate@5 é 1,0 nas 16 perguntas, um conjunto pequeno e feito à mão. Faço o gate por hit-rate em vez de precision de propósito. O corpus de eval tem poucos trechos por documento, então precision ficaria baixa e diria pouco ali. A latência "warm" fica em torno de 2,4–4s em CPU, com o cold start eliminado pelo pré-aquecimento do modelo no boot. Os embeddings não custam por token e os vetores ficam num banco que já existia.
 
 > Sanitizado para uso público: sem identificação da empresa, nomes reais, hosts internos ou credenciais. O corpus de eval é fictício por desenho.

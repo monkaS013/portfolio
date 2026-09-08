@@ -22,7 +22,7 @@ An orchestrator with a fan-out/fan-in fleet, and the source of truth split by th
 ## Engineering highlights
 
 - **Deterministic vs researched data, kept separate.** Critical numbers computed in code; market narrative and context researched by the LLM. That split is what keeps hallucination out of the points the decision rests on.
-- **Real parallelism by domain decomposition.** Six independent fronts become six concurrent agents, cutting research time while keeping traceability, since every claim carries a source.
+- **Real parallelism by domain decomposition.** Six independent fronts become six concurrent agents, so the research runs at once instead of in sequence, and traceability holds because every claim carries a source.
 - **Scope locked before execution.** A requirements interview (markets, depth, format) up front avoids rework and keeps the deliverable aimed at an executive reader.
 - **Honest handling of collection limits (anti-slop).** Large marketplaces block scraping (HTTP 403), so automatic listing counts were marked non-measurable, and paid import databases were flagged as a known gap.
 - **Open items tracked.** Certifications and tax rates to confirm with a customs broker were logged as "to validate," separating conclusion from assumption.
@@ -57,7 +57,7 @@ Um orquestrador com frota fan-out/fan-in, e a fonte de verdade separada pela nat
 ## Destaques de engenharia
 
 - **Dado determinístico × dado pesquisado, separados.** Números críticos calculados em código; narrativa e contexto de mercado pesquisados pelo LLM. Essa separação é o que mantém a alucinação longe dos pontos em que a decisão se apoia.
-- **Paralelismo real por decomposição de domínio.** Seis frentes independentes viram seis agentes concorrentes, encurtando o tempo de pesquisa e mantendo a rastreabilidade, já que cada afirmação vem com fonte.
+- **Paralelismo real por decomposição de domínio.** Seis frentes independentes viram seis agentes concorrentes, então a pesquisa roda de uma vez em vez de em sequência, e a rastreabilidade se mantém porque cada afirmação vem com fonte.
 - **Escopo travado antes de executar.** Uma entrevista de requisitos (mercados, profundidade, formato) no começo evita retrabalho e mantém o entregável mirado no leitor executivo.
 - **Tratamento honesto dos limites de coleta (anti-slop).** Marketplaces grandes bloqueiam scraping (HTTP 403), então a contagem automática de anúncios foi marcada como não-mensurável, e bases pagas de importação ficaram sinalizadas como lacuna conhecida.
 - **Pendências rastreadas.** Certificações e alíquotas a confirmar com o despachante ficaram como "a validar", separando conclusão de premissa.

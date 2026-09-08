@@ -26,7 +26,7 @@ Descrevem sistemas que construí dentro de uma empresa. Sem código proprietári
 | Case | Problema | Destaques |
 |---|---|---|
 | [Pergunte ao RH (RAG em produção)](case-studies/ask-hr-rag.md) | O colaborador não achava a resposta escondida nas políticas de RH | pgvector + LangGraph · eval gold-standard como gate de release · guardrails OWASP-LLM · citação da fonte |
-| [HRIS interno](case-studies/hris.md) | RH rodava em planilhas soltas e e-mail | Next.js/TypeScript · controle de acesso por papel · ~557 testes · deploy por push |
+| [HRIS interno](case-studies/hris.md) | RH rodava em planilhas soltas e e-mail | Next.js/TypeScript · controle de acesso por papel · 571 testes · deploy por push |
 | [Inteligência de mercado](case-studies/market-intelligence.md) | Falta de visibilidade do sell-in por concorrente | pipeline DuckDB sobre 4,5M de linhas · dados públicos regulatórios |
 | [Estudo de mercado multi-agente](case-studies/multi-agent-market-study.md) | Decidir a entrada de uma nova linha de produto | orquestrador + 6 agentes de pesquisa em paralelo |
 | [Dashboards executivos](case-studies/executive-dashboards.md) | A liderança não tinha uma visão única da operação | dashboards com atualização automática · multi-empresa, multi-moeda |

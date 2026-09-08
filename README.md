@@ -26,7 +26,7 @@ These describe systems I built inside a company. No proprietary code, no real da
 | Case | Problem | Highlights |
 |---|---|---|
 | [Ask-HR (RAG in production)](case-studies/ask-hr-rag.md) | Employees couldn't find answers buried in HR policies | pgvector + LangGraph · gold-standard eval as a release gate · OWASP-LLM guardrails · source citation |
-| [Internal HRIS](case-studies/hris.md) | HR ran on scattered spreadsheets and email | Next.js/TypeScript · role-based access · ~557 tests · deploy on push |
+| [Internal HRIS](case-studies/hris.md) | HR ran on scattered spreadsheets and email | Next.js/TypeScript · role-based access · 571 tests · deploy on push |
 | [Market intelligence](case-studies/market-intelligence.md) | No visibility into sell-in per competitor | DuckDB pipeline over 4.5M rows · open regulatory data |
 | [Multi-agent market study](case-studies/multi-agent-market-study.md) | Deciding whether to import a new product line | orchestrator + 6 parallel research agents |
 | [Executive dashboards](case-studies/executive-dashboards.md) | Leadership had no single view of the operation | auto-refreshing dashboards · multi-entity, multi-currency |

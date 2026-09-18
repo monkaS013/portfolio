@@ -12,7 +12,8 @@ I'm an electrical engineer who moved into data and AI. Over the past year I ship
 
 | Repo | What it does | Stack |
 |---|---|---|
-| [rag-docs](https://github.com/monkaS013/rag-docs) | RAG over a document corpus that runs offline: a LangGraph pipeline (retrieve → grade → route → generate or fall back), five OWASP-LLM guardrails, and a precision@k eval | Python, LangGraph, pgvector, Claude |
+| [rag-docs](https://github.com/monkaS013/rag-docs) | RAG over a document corpus that runs offline: a LangGraph pipeline (retrieve → grade → route → generate or fall back), five OWASP-LLM guardrails, a precision@k eval and OpenTelemetry tracing (GenAI semantic conventions) | Python, LangGraph, pgvector, Claude |
+| [cc-coord](https://github.com/monkaS013/cc-coord) | Coordination between simultaneous Claude Code sessions: hooks that let parallel agent sessions see each other before they collide on a file, port, repo or browser. Five days of real use: 6,739 events, 3,934 claims, 35 distinct sessions | Python stdlib, Claude Code hooks |
 | [brasilapi-mcp](https://github.com/monkaS013/brasilapi-mcp) | An MCP server I wrote from scratch, exposing the public BrasilAPI (postal codes, company registry, banks, holidays) as eight tools | Python, MCP SDK v2, httpx |
 | [multi-llm-ensemble-extractor](https://github.com/monkaS013/multi-llm-ensemble-extractor) | Runs Claude, Llama and Gemini in parallel on the same document and consolidates each field by majority vote, flagging disagreements for review | Python, Claude/Gemini/Groq, Pydantic |
 | [nl2sql-ecommerce-agent](https://github.com/monkaS013/nl2sql-ecommerce-agent) | Natural-language questions over an e-commerce dataset. It computes the number in a sandbox and shows the code and the source, instead of letting the model guess it | Python, DuckDB, Streamlit |
@@ -26,7 +27,7 @@ These describe systems I built inside a company. No proprietary code, no real da
 | Case | Problem | Highlights |
 |---|---|---|
 | [Ask-HR (RAG in production)](case-studies/ask-hr-rag.md) | Employees couldn't find answers buried in HR policies | pgvector + LangGraph · gold-standard eval as a release gate · OWASP-LLM guardrails · source citation |
-| [Internal HRIS](case-studies/hris.md) | HR ran on scattered spreadsheets and email | Next.js/TypeScript · role-based access · 571 tests · deploy on push |
+| [Internal HRIS](case-studies/hris.md) | HR ran on scattered spreadsheets and email | Next.js/TypeScript · role-based access · 680 tests · deploy on push |
 | [Market intelligence](case-studies/market-intelligence.md) | No visibility into sell-in per competitor | DuckDB pipeline over 4.5M rows · open regulatory data |
 | [Multi-agent market study](case-studies/multi-agent-market-study.md) | Deciding whether to import a new product line | orchestrator + 6 parallel research agents |
 | [Executive dashboards](case-studies/executive-dashboards.md) | Leadership had no single view of the operation | auto-refreshing dashboards · multi-entity, multi-currency |
@@ -39,7 +40,7 @@ Skills I built or extended for my own agent workflow are listed in [ai-skills.md
 
 - B.Sc. Electrical Engineering, Universidade Santa Cecília
 - Data & AI at an energy-sector importer; before that, demand planning and S&OP
-- Python · RAG · pgvector · LangGraph · agents · MCP · evals · FastAPI · Next.js · DuckDB · SQL · Power BI
+- Python · RAG · pgvector · LangGraph · agents · MCP · evals · OpenTelemetry · n8n · FastAPI · Next.js · DuckDB · SQL · Power BI
 
 ## Contact
 

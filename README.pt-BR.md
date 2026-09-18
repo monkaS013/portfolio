@@ -12,7 +12,8 @@ Sou engenheiro eletricista e migrei para dados e IA. No último ano coloquei no 
 
 | Repo | O que faz | Stack |
 |---|---|---|
-| [rag-docs](https://github.com/monkaS013/rag-docs) | RAG sobre um corpus de documentos que roda offline: pipeline em LangGraph (recupera → avalia → roteia → responde ou cai no fallback), cinco guardrails OWASP-LLM e eval de precision@k | Python, LangGraph, pgvector, Claude |
+| [rag-docs](https://github.com/monkaS013/rag-docs) | RAG sobre um corpus de documentos que roda offline: pipeline em LangGraph (recupera → avalia → roteia → responde ou cai no fallback), cinco guardrails OWASP-LLM, eval de precision@k e tracing OpenTelemetry (convenções GenAI) | Python, LangGraph, pgvector, Claude |
+| [cc-coord](https://github.com/monkaS013/cc-coord) | Coordenação entre sessões simultâneas do Claude Code: hooks que fazem sessões paralelas de agente se enxergarem antes de colidir em arquivo, porta, repositório ou browser. Cinco dias de uso real: 6.739 eventos, 3.934 claims, 35 sessões distintas | Python stdlib, hooks do Claude Code |
 | [brasilapi-mcp](https://github.com/monkaS013/brasilapi-mcp) | Servidor MCP que escrevi do zero, expondo a BrasilAPI pública (CEP, CNPJ, bancos, feriados) como oito ferramentas | Python, MCP SDK v2, httpx |
 | [multi-llm-ensemble-extractor](https://github.com/monkaS013/multi-llm-ensemble-extractor) | Roda Claude, Llama e Gemini em paralelo sobre o mesmo documento e consolida campo a campo por voto majoritário, marcando as divergências para revisão | Python, Claude/Gemini/Groq, Pydantic |
 | [nl2sql-ecommerce-agent](https://github.com/monkaS013/nl2sql-ecommerce-agent) | Perguntas em linguagem natural sobre um dataset de e-commerce. Ele calcula o número num sandbox e mostra o código e a fonte, em vez de deixar o modelo chutar | Python, DuckDB, Streamlit |
@@ -26,7 +27,7 @@ Descrevem sistemas que construí dentro de uma empresa. Sem código proprietári
 | Case | Problema | Destaques |
 |---|---|---|
 | [Pergunte ao RH (RAG em produção)](case-studies/ask-hr-rag.md) | O colaborador não achava a resposta escondida nas políticas de RH | pgvector + LangGraph · eval gold-standard como gate de release · guardrails OWASP-LLM · citação da fonte |
-| [HRIS interno](case-studies/hris.md) | RH rodava em planilhas soltas e e-mail | Next.js/TypeScript · controle de acesso por papel · 571 testes · deploy por push |
+| [HRIS interno](case-studies/hris.md) | RH rodava em planilhas soltas e e-mail | Next.js/TypeScript · controle de acesso por papel · 680 testes · deploy por push |
 | [Inteligência de mercado](case-studies/market-intelligence.md) | Falta de visibilidade do sell-in por concorrente | pipeline DuckDB sobre 4,5M de linhas · dados públicos regulatórios |
 | [Estudo de mercado multi-agente](case-studies/multi-agent-market-study.md) | Decidir a entrada de uma nova linha de produto | orquestrador + 6 agentes de pesquisa em paralelo |
 | [Dashboards executivos](case-studies/executive-dashboards.md) | A liderança não tinha uma visão única da operação | dashboards com atualização automática · multi-empresa, multi-moeda |

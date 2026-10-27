@@ -6,7 +6,7 @@
 
 I build AI and automation systems that reach production. This portfolio has two kinds of entry. There are open-source repositories you can read and run, and there are case studies of internal systems I built at work, written without any proprietary code, data, or secrets.
 
-I'm an electrical engineer who moved into data and AI. Over the past year I shipped a RAG assistant that answers HR questions in production and an internal HR platform that a whole company uses every day. There are also data pipelines over a few million rows, plus some smaller tools I keep for myself.
+I'm an electrical engineer who moved into data and AI. Over the past year I shipped an internal HR platform that a whole company uses every day. Inside it, a RAG assistant answered HR questions in production for about five weeks; later I replaced it with a help center that needs no LLM. Now I'm building a microgrid simulator checked number by number against a commercial engineering tool. There are also data pipelines over a few million rows, plus some smaller tools I keep for myself.
 
 ## Open-source code
 
@@ -20,14 +20,15 @@ I'm an electrical engineer who moved into data and AI. Over the past year I ship
 | [doc-analyzer-evals](https://github.com/monkaS013/doc-analyzer-evals) | Structured document extraction with a gold-standard eval (precision/recall/F1) | Python, Claude, Pydantic |
 | [claude-usage-monitor](https://github.com/monkaS013/claude-usage-monitor) | Floating Windows widget with the real usage numbers of the Claude plan, with no network calls | Python, Tkinter |
 
-## Case studies (production systems, sanitized)
+## Case studies (systems built at work, sanitized)
 
 These describe systems I built inside a company. No proprietary code, no real data, no company name. What's left is the problem and how it got solved.
 
 | Case | Problem | Highlights |
 |---|---|---|
-| [Ask-HR (RAG in production)](case-studies/ask-hr-rag.md) | Employees couldn't find answers buried in HR policies | pgvector + LangGraph · gold-standard eval as a release gate · OWASP-LLM guardrails · source citation |
-| [Internal HRIS](case-studies/hris.md) | HR ran on scattered spreadsheets and email | Next.js/TypeScript · role-based access · 1,279 tests · deploy on push |
+| [Microgrid simulator](case-studies/microgrid-simulator.md) | Sizing projects depended on a licensed tool with no Brazilian tariffs | parity harness against the reference tool · 3,044 candidates matched on NPC · real utility bill within 0.00002% · 4,162 tests |
+| [Ask-HR (RAG, retired after measurement)](case-studies/ask-hr-rag.md) | Employees couldn't find answers buried in HR policies | pgvector + LangGraph · gold-standard eval as a release gate · OWASP-LLM guardrails · replaced by an LLM-free search at 91.2% top-3 on a blind set |
+| [Internal HRIS](case-studies/hris.md) | HR ran on scattered spreadsheets and email | Next.js/TypeScript · role-based access · 1,548 tests · deploy on push |
 | [Market intelligence](case-studies/market-intelligence.md) | No visibility into sell-in per competitor | DuckDB pipeline over 4.5M rows · open regulatory data |
 | [Multi-agent market study](case-studies/multi-agent-market-study.md) | Deciding whether to import a new product line | orchestrator + 6 parallel research agents |
 | [Executive dashboards](case-studies/executive-dashboards.md) | Leadership had no single view of the operation | auto-refreshing dashboards · multi-entity, multi-currency |

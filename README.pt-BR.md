@@ -6,7 +6,7 @@
 
 Construo sistemas de IA e automação que chegam a produção. Este portfólio tem dois tipos de entrada. Há repositórios open-source que você pode ler e rodar, e há case studies de sistemas internos que construí no trabalho, escritos sem código proprietário, dados reais ou segredos.
 
-Sou engenheiro eletricista e migrei para dados e IA. No último ano coloquei no ar um assistente RAG que responde dúvidas de RH em produção e um portal de RH que uma empresa inteira usa todo dia. Também tenho pipelines sobre alguns milhões de linhas e ferramentas menores que uso no meu dia a dia.
+Sou engenheiro eletricista e migrei para dados e IA. No último ano coloquei no ar um portal de RH que uma empresa inteira usa todo dia. Dentro dele, um assistente RAG respondeu dúvidas de RH em produção por cerca de cinco semanas; depois troquei por uma central de ajuda que dispensa LLM. Agora estou construindo um simulador de microrredes conferido número a número contra uma ferramenta comercial de engenharia. Também tenho pipelines sobre alguns milhões de linhas e ferramentas menores que uso no meu dia a dia.
 
 ## Código open-source
 
@@ -20,14 +20,15 @@ Sou engenheiro eletricista e migrei para dados e IA. No último ano coloquei no 
 | [doc-analyzer-evals](https://github.com/monkaS013/doc-analyzer-evals) | Extração estruturada de documentos com eval gold-standard (precision/recall/F1) | Python, Claude, Pydantic |
 | [claude-usage-monitor](https://github.com/monkaS013/claude-usage-monitor) | Widget flutuante no Windows com os números reais de uso do plano Claude, sem nenhuma chamada de rede | Python, Tkinter |
 
-## Case studies (sistemas em produção, sanitizados)
+## Case studies (sistemas construídos no trabalho, sanitizados)
 
 Descrevem sistemas que construí dentro de uma empresa. Sem código proprietário, sem dado real, sem o nome da empresa. Sobra o problema e como ele foi resolvido.
 
 | Case | Problema | Destaques |
 |---|---|---|
-| [Pergunte ao RH (RAG em produção)](case-studies/ask-hr-rag.md) | O colaborador não achava a resposta escondida nas políticas de RH | pgvector + LangGraph · eval gold-standard como gate de release · guardrails OWASP-LLM · citação da fonte |
-| [HRIS interno](case-studies/hris.md) | RH rodava em planilhas soltas e e-mail | Next.js/TypeScript · controle de acesso por papel · 1.279 testes · deploy por push |
+| [Simulador de microrredes](case-studies/microgrid-simulator.md) | O dimensionamento dependia de uma ferramenta licenciada sem tarifa brasileira | harness de paridade contra a ferramenta de referência · 3.044 candidatos batendo no VPL · fatura real a 0,00002% · 4.162 testes |
+| [Pergunte ao RH (RAG, aposentado após medição)](case-studies/ask-hr-rag.md) | O colaborador não achava a resposta escondida nas políticas de RH | pgvector + LangGraph · eval gold-standard como gate de release · guardrails OWASP-LLM · substituído por busca sem LLM com 91,2% no top 3 num conjunto cego |
+| [HRIS interno](case-studies/hris.md) | RH rodava em planilhas soltas e e-mail | Next.js/TypeScript · controle de acesso por papel · 1.548 testes · deploy por push |
 | [Inteligência de mercado](case-studies/market-intelligence.md) | Falta de visibilidade do sell-in por concorrente | pipeline DuckDB sobre 4,5M de linhas · dados públicos regulatórios |
 | [Estudo de mercado multi-agente](case-studies/multi-agent-market-study.md) | Decidir a entrada de uma nova linha de produto | orquestrador + 6 agentes de pesquisa em paralelo |
 | [Dashboards executivos](case-studies/executive-dashboards.md) | A liderança não tinha uma visão única da operação | dashboards com atualização automática · multi-empresa, multi-moeda |
